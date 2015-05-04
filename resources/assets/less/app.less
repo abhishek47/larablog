@@ -1,27 +1,143 @@
 @import "bootstrap/bootstrap";
 
 @btn-font-weight: 300;
-@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "Open Sans", sans-serif;
 
 body {
-  padding-top: 60px;
+  font-family: @font-family-sans-serif;
+  padding-top: 50px;
 }
 
 body, label, .checkbox label {
 	font-weight: 300;
 }
 
+.navbar {
+  min-height: 60px;
+  padding-top: 5px;
+}
+
+.navbar-inverse {
+  font-size: 1.2em;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #b94a48;
+  font-weight: bold;
+}
+
+
+
+.jumbotron, .jumbotron-small {
+  background-image: url("/images/banner/banner2.jpg");
+  background-repeat: no-repeat;
+  background-position: 20%;
+  background-size: cover;
+  height: 400px;
+  color: #ffffff;
+}
+
+.jumbotron-small {
+  padding-top: 10px;
+  height: 200px;
+}
+
+.content-small {
+  padding: 0px;
+}
+
+
+ .content {
+  padding: 40px;
+}
+
+.jumbotron h1 {
+  padding-bottom: 15px;
+}
+
+
+
 .blog-article {
-  padding-top: 20px;
-  padding-bottom: 45px;
-  border-bottom: 1px solid #cccccc;
+  position: relative;
+  width: 80%;
+  max-width: 710px;
+  margin: 4rem auto;
+  padding-bottom: 4rem;
+  border-bottom: #EBF2F6 1px solid;
+  word-wrap: break-word;
+}
+
+.blog-article .title {
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+.blog-article .body {
+  margin-top: 20px;
+  padding: 10px;
+  letter-spacing: 0.01rem;
+  font-size: 1.8rem;
+  line-height: 1.75em;
+  font-weight: normal;
+  color: #595959;
+}
+
+.post-meta {
+  display: block;
+  margin: 1.75rem 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #9EABB3;
+}
+
+.post-meta a {
+  color: #9EABB3;
+  text-decoration: none;
+}
+
+.author-thumb {
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 9px;
+  border-radius: 100%;
+}
+
+.post-date {
+  display: inline-block;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: #d5dbde 1px solid;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: #2E2E2E;;
+  font-weight: bold;
 }
 
 .blog-title {
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   font-size: 3.2em;
+  line-height: 1.15em;
+
+}
+
+.blog-owner {
+  padding-bottom: 20px;
+}
+
+.blog-time {
+  color: #ccc;
 }
 
 .blog-body {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  
 }

@@ -104,6 +104,7 @@ class ArticlesController extends Controller {
      *
      * @param \App\Article $article
      * @param \App\Http\Requests\ArticleRequest $request
+     * @param \Cocur\Slugify\Slugify $slugify
      * @return Response
      */
     public function update(Article $article, ArticleRequest $request, Slugify $slugify)
@@ -124,7 +125,8 @@ class ArticlesController extends Controller {
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @internal param int $id
      * @return Response
      */
     public function destroy(Request $request)

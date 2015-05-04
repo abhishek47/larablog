@@ -1,7 +1,23 @@
 @extends('app')
 
+@section('banner')
+<div class="jumbotron">
+    <div class="content text-center">
+        <h1>Larablog</h1>
+        <p>Recent updates and news about the symphony based framework - 'Laravel' </p>
+        <p><a class="btn btn-primary btn-lg" href="{{ url('/articles') }}" role="button">Explore</a></p>
+    </div>
+</div>
+@endsection
+
 @section('content')
 
-   Home Page
+@if(count($articles))
+
+@foreach($articles as $article)
+    @include('partials.article')
+@endforeach
+
+@endif
 
 @endsection

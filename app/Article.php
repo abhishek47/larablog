@@ -54,8 +54,10 @@ class Article extends Model {
     }
 
     public function getPublishedAtAttribute($date){
-        return  Carbon::parse($date)->format('Y-m-d');
+        return  Carbon::parse($date);
     }
+
+
 
 
 

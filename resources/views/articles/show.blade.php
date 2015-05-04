@@ -2,14 +2,16 @@
 
 @section('content')
 
-<h1>{{ $article->title }}</h1>
+<article class="blog-article">
 
-<hr>
+    <h3 class="title">{{ $article->title }}</a></h3>
+    <section class="post-meta">
+        <time class="post-date" datetime="2015-04-30">{{ $article->published_at->diffForHumans() }}</time>
+    </section>
 
-<article>
 
     <div class="body">
-        {{ $article->body }}
+        {!! $article->body !!}
     </div>
 
 </article>
