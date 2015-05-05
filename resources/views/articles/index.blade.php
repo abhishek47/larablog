@@ -12,6 +12,7 @@
 
 @section('content')
 
+ <div class="content-wrapper">
 
   @if(count($articles))
 
@@ -19,6 +20,10 @@
       @include('partials.article')
     @endforeach
 
+    {!! $articles->render() !!}
+
   @endif
+
+ </div>
 
 @endsection

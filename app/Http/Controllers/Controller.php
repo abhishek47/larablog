@@ -35,4 +35,6 @@ abstract class Controller extends BaseController {
         $this->user = $this->signedIn = Auth::user();
     }
 
+
+
 }

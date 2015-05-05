@@ -12,12 +12,17 @@
 
 @section('content')
 
-@if(count($articles))
+<div class="content-wrapper">
+    @if(count($articles))
 
-@foreach($articles as $article)
-    @include('partials.article')
-@endforeach
+    @foreach($articles as $article)
+        @include('partials.article')
+    @endforeach
 
-@endif
+     <br>
+     <a  href="/articles" class="btn btn-primary">View More Articles</a>
+
+    @endif
+</div>
 
 @endsection

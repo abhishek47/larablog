@@ -39,4 +39,9 @@ class PagesController extends Controller {
         return view('pages.contact');
     }
 
+    public function markdown()
+    {
+        return view('pages.markdown');
+    }
+
 }

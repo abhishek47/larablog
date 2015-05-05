@@ -34,7 +34,7 @@ class ArticlesController extends Controller {
      */
     public function index()
     {
-        $articles = Article::latest('published_at')->published()->get();
+        $articles = Article::latest('published_at')->published()->paginate(8);
         return view('articles.index', compact('articles'));
     }
 
@@ -58,6 +58,7 @@ class ArticlesController extends Controller {
      */
     public function store(ArticleRequest $request, Slugify $slugify)
     {
+
 
         $slug = $slugify->slugify($request->get('title'));
 

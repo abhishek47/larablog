@@ -6235,17 +6235,26 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+img {
+  width: 100%;
+}
 .navbar {
   min-height: 60px;
   padding-top: 5px;
 }
 .navbar-inverse {
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 .navbar-inverse .navbar-brand {
   color: #b94a48;
   font-weight: bold;
 }
+/*.navbar-nav > li > a {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10%;
+}*/
 .jumbotron,
 .jumbotron-small {
   background-image: url("/images/banner/banner2.jpg");
@@ -6268,11 +6277,14 @@ label,
 .jumbotron h1 {
   padding-bottom: 15px;
 }
-.blog-article {
-  position: relative;
+.content-wrapper {
   width: 80%;
   max-width: 710px;
   margin: 4rem auto;
+}
+.blog-article {
+  position: relative;
+  max-width: 710px;
   padding-bottom: 4rem;
   border-bottom: #EBF2F6 1px solid;
   word-wrap: break-word;
@@ -6289,6 +6301,14 @@ label,
   line-height: 1.75em;
   font-weight: normal;
   color: #595959;
+}
+.blog-article h1,
+.blog-article h2,
+.blog-article h3,
+.blog-article h4,
+.blog-article h5,
+.blog-article h6 {
+  color: #1e1e1e;
 }
 .post-meta {
   display: block;
@@ -6336,6 +6356,19 @@ label,
 }
 .blog-body {
   font-size: 1.2em;
+}
+.footer-fixed-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #222222;
+  border-color: #080808;
+}
+.footer-fixed-bottom .btn {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */
