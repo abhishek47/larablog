@@ -1,6 +1,7 @@
 <?php namespace App\Providers;
 
 use App\Article;
+use App\Tag;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -29,6 +30,10 @@ class RouteServiceProvider extends ServiceProvider {
 
         $router->bind('articles', function($slug){
             return Article::published()->where('slug', $slug)->first();;
+        });
+
+        $router->bind('tags', function($name){
+            return Tag::where('name', $name)->firstOrFail();
         });
 	}
 

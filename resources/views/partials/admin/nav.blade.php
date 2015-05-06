@@ -15,6 +15,7 @@
                 <li class="{{ Active::pattern('admin') }}"><a href="{{ url('/admin') }}"><i class="glyphicon glyphicon-th"></i> Dashboard</a></li>
                 <li class="{{ Active::pattern('admin/articles') }}"><a href="{{ url('/admin/articles') }}"><i class="glyphicon glyphicon-book"></i> Content</a></li>
                 <li class="{{ Active::pattern('articles/create') }}"><a href="{{ url('/articles/create') }}"><i class="glyphicon glyphicon-plus"></i> New Article</a></li>
+                <li class="{{ Active::pattern('admin/tags') }}"><a href="{{ url('/admin/tags') }}"><i class="glyphicon glyphicon-tags"></i> Tags</a></li>
                 <li class="{{ Active::pattern('admin/settings') }}"><a href="{{ url('/admin/settings') }}"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
             </ul>
 

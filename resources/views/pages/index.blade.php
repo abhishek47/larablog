@@ -5,7 +5,7 @@
     <div class="content text-center">
         <h1>Larablog</h1>
         <p>Recent updates and news about the symphony based framework - 'Laravel' </p>
-        <p><a class="btn btn-primary btn-lg" href="{{ url('/articles') }}" role="button">Explore</a></p>
+        <p><a class="btn btn-primary btn-lg" href="{{ url('/articles') }}" role="button">Read All Articles</a></p>
     </div>
 </div>
 @endsection

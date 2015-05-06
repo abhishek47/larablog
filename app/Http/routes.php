@@ -23,6 +23,12 @@ Route::get('admin/articles', 'AdminController@articles');
 
 Route::get('admin/settings', 'AdminController@settings');
 
+Route::get('tags/{tags}', 'TagsController@show');
+
+Route::get('admin/tags', 'TagsController@create');
+
+Route::post('admin/tags', 'TagsController@store');
+
 Route::resource('articles', 'ArticlesController');
 
 Route::controllers([
