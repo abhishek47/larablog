@@ -6,6 +6,7 @@
 body {
   font-family: @font-family-sans-serif;
   padding-top: 50px;
+
 }
 
 body, label, .checkbox label {
@@ -70,6 +71,7 @@ img {
 
 .content-wrapper{
   width: 80%;
+  min-height: 500px;
   max-width: 710px;
   margin: 4rem auto;
 }
@@ -213,7 +215,9 @@ img {
 }
 
 .page-footer {
-  position: absolute;
+  position: relative;
+  bottom: 0;
+  overflow:hidden;
   left: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
