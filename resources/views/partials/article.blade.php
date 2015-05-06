@@ -10,7 +10,7 @@
         <time class="post-date" datetime="2015-04-30">{{ $article->published_at->diffForHumans() }}</time>
         <p class="post-tags">Tags :
             @foreach($article->tags as $tag)
-               <a href="{{ url('tags', $tag->name) }}">{{ $tag->name }}</a>,
+               <a href="{{ url('tags', $tag->name) }}">{{ $tag->name }}</a>
             @endforeach
         </p>
     </footer>
