@@ -2,21 +2,28 @@
 
 @section('content')
 
-   <div class="content-wrapper">
-       <h1 class="about-title text-center">About Larablog</h1>
-       <p class="about-text text-center">
-           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-           dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-           qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-           modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-           nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-           qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
-           fugiat quo voluptas nulla pariatur?
-       </p>
-   </div>
+<div class="content-wrapper">
+    <h1 class="about-title text-center">About Larablog</h1>
+    <p class="about-text text-center">
+        Larablog is a product of <a target="_blank" href="http://www.thesevendesigns.com">7Designs Studio</a>.
+        The perfect blend of creativity and technology leaves behind a heady concoction. More so, a new breed of thinkers and doers. We are Creative Technologists.
 
+        We help create an identity for your brand and define your position. We then build the credibility and potential of your brand in the market with creativity and technology.
+    </p>
+    <p class="about-text text-center">
+        By focusing on a balance of the end user’s experience and an organisation’s requirements,
+        7Designs has carved out a place for itself as an agency that makes heads turn.
+    </p>
+
+    <p class="about-text text-center">
+        The strength of the team is each individual member.
+        The strength of each member is the team.
+    </p>
+
+    <p class="about-text text-center">
+        We have just started chasing the vision, not the money.
+    </p>
+
+</div>
 
 @endsection

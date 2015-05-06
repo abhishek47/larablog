@@ -1,4 +1,4 @@
-<footer class="page-footer {{ Active::pattern(['about', 'contact'], 'page-footer-fixed-bottom') }}">
+<footer class="page-footer {{ Active::pattern(['about', 'author/abhishek'], 'page-footer-fixed-bottom') }}">
     <div class="container clearfix">
          <p class="pull-left">Larablog &copy; 2015</p>
          <p class="text-center">
